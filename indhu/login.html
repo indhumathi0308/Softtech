@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join ou team</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h1>softtech</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu-icon">
+            <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+        </div>
+    </div>
+
+    <div class="login">
+        <form class="form" id="form"  method="post" action="index.php"> <!-- Change from div to form -->
+            <h1>Login</h1>
+            <div class="profile">
+                <img src="pro.webp" alt="profile">
+            </div>
+
+
+
+            <div class="form-item">
+                <ion-icon name="person"></ion-icon>
+                <input type="text" id="username" name="username" placeholder="Username" >
+                <div id="name_error" class="error-message"></div>
+            </div>
+           
+            <div class="form-item">
+                <ion-icon name="mail"></ion-icon>
+                <input type="email" id="email" name="useremail" placeholder="Email id" >
+                <p id="email_error" class="error-message"></p>
+            </div>
+
+            <div class="form-item">
+                <ion-icon name="lock-closed"></ion-icon>
+                <input type="password" id="password" name="userpsd" placeholder="password" >
+                <p id="pass_error" class="error-message"></p>
+            </div>
+
+            <div class="submit">
+                <button type="submit" name="submit" >login</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="rows">
+
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href=""> about us</a></li>
+                        <li><a href=""> our services</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href=""> affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>about us</h4>
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">Learning Hub</a></li>
+                        <li><a href="">Technologies</a></li>
+                        <li><a href="">Talk to an Expert</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li><a href="">contact@softtech.com</a></li>
+                        <li><a href="">9876543210</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-media">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
