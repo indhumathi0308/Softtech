@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h1>softtech</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Career</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu-icon">
+            <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+        </div>
+    </div>
+
+    <div class="mainimg">
+        <img src="img.png">
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href=""> about us</a></li>
+                        <li><a href=""> our services</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href=""> affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>about us</h4>
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">Learning Hub</a></li>
+                        <li><a href="">Technologies</a></li>
+                        <li><a href="">Talk to an Expert</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li><a href="">contact@softtech.com</a></li>
+                        <li><a href="">9876543210</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-media">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
